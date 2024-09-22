@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokédex</h1>
+       
+        <div class="pagination">
+            <button id="prev-btn"><<</button>
+            <button id="next-btn">>></button>
+        </div>
+
+      
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar Pokémon por nombre...">
+            <button id="search-btn">Buscar</button>
+        </div>
+
+        <div class="filter-container">
+            <select id="type-dropdown">
+                <option value="">Selecciona un tipo</option>
+            </select>
+            <button id="show-all-btn">Mostrar Todos</button>
+        </div>
+
+        
+        <div id="cards-container" class="cards-container"></div>
+
+ 
+        <div class="pagination bottom-pagination">
+            <button id="prev-btn-bottom">Anterior</button>
+            <button id="next-btn-bottom">Siguiente</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

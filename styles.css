@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #200202 0%, #ded7d9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #fb1414;
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.search-container, .filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input, select, button {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+#search-input {
+    width: 300px;
+    background-color: #f9f9f9;
+    margin-top: -20px;
+}
+
+#search-btn, #show-all-btn {
+    padding: 15px 30px;
+    background-color: #00c3ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: -20px;
+}
+
+#search-btn:hover, #show-all-btn:hover {
+    background-color: #007bff;
+}
+
+#type-dropdown {
+    background-color: #f9f9f9;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.card.type-grass { background-color: #78C850; }
+.card.type-fire { background-color: #eacdb8; }
+.card.type-water { background-color: #83a5f5; }
+.card.type-electric { background-color: #F8D030; }
+.card.type-normal { background-color: #11608d; }
+.card.type-fighting { background-color: #177bf6; }
+.card.type-ground { background-color: #b19424; }
+.card.type-rock { background-color: #0ef667; }
+.card.type-bug { background-color: #4cc2a8; }
+.card.type-ghost { background-color: #29a096; }
+.card.type-steel { background-color: #6cac19; }
+
+.pagination {
+    margin: 20px 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.pagination button {
+    padding: 15px 30px;
+    background-color: #00b7ff;
+    color: #faf6f6;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
